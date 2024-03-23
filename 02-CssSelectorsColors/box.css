@@ -1,0 +1,30 @@
+.container {
+  background-color: green;
+
+  border-style: solid;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.container:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+  border: 5px solid red;
+}
+.container .box {
+  background-color: yellow;
+  border-style: solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 5px solid black;
+}
+.container .box:hover {
+  background-color: blue;
+  transition: 1s;
+  border: 5px solid orange;
+}
