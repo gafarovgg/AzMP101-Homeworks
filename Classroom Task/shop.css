@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    background-color: rgb(255, 0, 0);
+    height: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.header nav ul {
+    display: flex;
+    column-gap: 2rem;
+}
+nav {
+    display: flex;
+    justify-content: start;
+    
+}
