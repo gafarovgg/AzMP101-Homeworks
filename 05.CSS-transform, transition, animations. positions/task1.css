@@ -16,7 +16,8 @@ img {
 }
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   height: 48px;
   width: 40px;
 }
