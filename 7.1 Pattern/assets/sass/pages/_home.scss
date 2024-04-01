@@ -1,0 +1,26 @@
+#home {
+    #hero-banner {
+      background-color: cyan;
+      background-image: url("../media/images/header-bg.jpg");
+      padding: 13rem 0;
+      .hero-banner {
+        @include flexBox;
+        flex-direction: column;
+        gap: 2rem;
+  
+        h3 {
+          color: $color-white;
+          font-size: 2rem;
+          text-align: center;
+        }
+        h1 {
+          color: $color-white;
+          font-size: 3rem;
+          text-align: center;
+        }
+        button{
+          
+        }
+      }
+    }
+  }
