@@ -1,0 +1,15 @@
+ {
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "test-sass",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass" : "node-sass assets/scss/main.scss -o assets/css -w"
+  },
+  "author": "",
+  "license": " MIT"
+}
