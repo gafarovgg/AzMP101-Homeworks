@@ -1,19 +1,42 @@
 span.navbar-brand {
-    font-size: 14px;
+  font-size: 14px;
 }
-.dropdown .dropdown-toggle  {
-    font-size: 14px;
-    text-decoration: none;
+.dropdown .dropdown-toggle {
+  font-size: 14px;
+  text-decoration: none;
 }
 .dropdown .dropdown-toggle ul li a {
-    font-size: 14px;
+  font-size: 14px;
 }
 button.btn-outline-gray-400 {
-    border: 1px solid rgb(193, 199, 198);
+  border: 1px solid rgb(193, 199, 198);
 }
 .list-group {
-    list-style: none
+  list-style: none;
 }
 .list-group ul li {
-    display: flex;
+  display: flex;
+}
+.departments {
+  font-size: 16px;
+}
+.department a {
+  border: radius 20px;
+  line-height: 25px;
+}
+.department-green {
+  background-color: green;
+}
+.departments {
+  font-size: small;
+}
+.departments ul li a {
+  font-size: small;
+}
+.department {
+  font-size: small;
+}
+h3 .mb-0 {
+  padding-top: 3rem;
+  margin-top: 3rem;
 }
