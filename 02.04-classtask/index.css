@@ -1,0 +1,10 @@
+span.navbar-brand {
+    font-size: 14px;
+}
+.dropdown .dropdown-toggle  {
+    font-size: 14px;
+    text-decoration: none;
+}
+.dropdown .dropdown-toggle ul li a {
+    font-size: 14px;
+}
