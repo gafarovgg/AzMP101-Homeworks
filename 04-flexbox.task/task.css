@@ -85,15 +85,19 @@ header h2 {
 .second-page {
   height: 100vh;
 }
-.second-page img {
-  height: 100px;
-  width: 100px;
-}
+
 .cards {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.cards .card-photo {
+  width: 30%;
+}
+.cards .card-photo img{
+  width: 100%;
 }
 section#about {
   background-color: red;
@@ -177,4 +181,13 @@ footer section#copyright {
   color: white;
   text-align: center;
   padding: 1.5rem;
+}
+.col-1 {
+  width: 33%;
+}
+.col-2 {
+  width: 33%;
+}
+.col-3 {
+  width: 33%;
 }
