@@ -8,3 +8,6 @@ span.navbar-brand {
 .dropdown .dropdown-toggle ul li a {
     font-size: 14px;
 }
+button.btn-outline-gray-400 {
+    border: 1px solid rgb(193, 199, 198);
+}
