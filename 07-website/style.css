@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+.header {
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(16, 99, 78, 0.9);
+}
+.header .floral {
+  font-size: 1.5rem;
+  color: #d8e3d5;
+}
+.header ul li a {
+  padding: 1rem;
+  color: #d8e3d5;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+}
+
+.bgi {
+  text-align: center;
+  background-image: url("https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl4.jpg");
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.bgi h3 {
+  color: #1b745e;
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+.bgi span {
+  color: #1b745e;
+  font-style: italic;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  padding: 2rem;
+  gap: 20px;
+}
+.localflorist {
+  margin: 0 auto;
+
+  width: 50vw;
+  height: 50vh;
+  background-color: #fff;
+}
+.left__part__text {
+  width: 50%;
+}
+.left__part__text p {
+    font-family: 'Quicksand', sans-serif;
+  margin: 20px;
+}
+.left__part__text .alt {
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    line-height :1.5;
+  }
+.left__part__text h3 {
+  font-size: 2.875rem;
+  font-family: 'Crimson Text', serif;
+
+  margin: 20px;
+}
