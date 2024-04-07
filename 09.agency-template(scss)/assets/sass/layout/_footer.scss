@@ -1,0 +1,13 @@
+footer {
+  .footer {
+    padding: 20px 0;
+    @include flexBox($justify: space-between);
+
+    nav {
+      ul {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

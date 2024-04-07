@@ -1,0 +1,46 @@
+header {
+  background-color: $bg-color;
+  .header {
+    @include flexBox($justify: space-between);
+    // height: 80px;
+    padding: 1.5rem 0;
+    .logo {
+      color: $primary-color;
+      font-size: 2rem;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        gap: 2rem;
+        li {
+          a {
+            color: $color-white;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            transition: all 0.6s;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .fa-solid {
+      &.fa-bars {
+        color: $color-white;
+        font-size: 1.2rem;
+        display: none;
+
+        @media only screen and (max-width: 767px) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

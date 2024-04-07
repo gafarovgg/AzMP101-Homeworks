@@ -1,0 +1,16 @@
+.primary-btn {
+  background-color: $primary-color;
+  color: $color-white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid $primary-color;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.6s;
+
+  &:hover {
+    background-color: transparent;
+    color: $primary-color;
+  }
+}

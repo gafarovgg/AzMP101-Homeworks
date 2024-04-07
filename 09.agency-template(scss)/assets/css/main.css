@@ -1,0 +1,306 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+.primary-btn {
+  background-color: #ffc800;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #ffc800;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.primary-btn:hover {
+  background-color: transparent;
+  color: #ffc800;
+}
+
+header {
+  background-color: #212529;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+header .header .logo {
+  color: #ffc800;
+  font-size: 2rem;
+}
+header .header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+header .header nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.6s;
+}
+header .header nav ul li a:hover {
+  color: #ffc800;
+}
+@media only screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+}
+header .header .fa-solid.fa-bars {
+  color: #fff;
+  font-size: 1.2rem;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  header .header .fa-solid.fa-bars {
+    display: inline-block;
+  }
+}
+
+footer .footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+#home #hero-banner {
+  background-color: cyan;
+  background-image: url("../media/images/header-bg.jpg");
+  padding: 13rem 0;
+}
+#home #hero-banner .hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#home #hero-banner .hero-banner h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+#home #hero-banner .hero-banner h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+#home #portfolio {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+#home #portfolio .portfolio .portfolio-title {
+  font-size: 3rem;
+  text-align: center;
+}
+#home #portfolio .portfolio .portfolio-info {
+  margin: 2rem 0;
+  text-align: center;
+}
+#home #portfolio .portfolio .portfolio-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#home #portfolio .portfolio .portfolio-cards .card {
+  width: 30%;
+  background-color: #fff;
+}
+#home #portfolio .portfolio .portfolio-cards .card .card-photo {
+  position: relative;
+  overflow: hidden;
+}
+#home #portfolio .portfolio .portfolio-cards .card .card-photo img {
+  width: 100%;
+}
+#home #portfolio .portfolio .portfolio-cards .card .card-photo .img-hover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 200, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.6s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home
+  #portfolio
+  .portfolio
+  .portfolio-cards
+  .card
+  .card-photo
+  .img-hover:hover {
+  opacity: 1;
+}
+#home
+  #portfolio
+  .portfolio
+  .portfolio-cards
+  .card
+  .card-photo
+  .img-hover
+  .fa-plus {
+  font-size: 3rem;
+  color: #fff;
+}
+#home #portfolio .portfolio .portfolio-cards .card .portfolio-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+#home #portfolio .portfolio .portfolio-cards .card .portfolio-content h3 {
+  margin-bottom: 1rem;
+} /*# sourceMappingURL=main.css.map */
