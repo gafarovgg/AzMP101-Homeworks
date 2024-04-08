@@ -68,6 +68,16 @@
 
 // task - 8
 
+// let eded1 = parseInt(prompt("Birinci ededi daxil edin"));
+// let eded2 = parseInt(prompt("Ikinci ededi daxil edin"));
+// let eded3 = parseInt(prompt("Ucuncu ededi daxil edin"));
+
+// if (eded1 + eded2 > eded3 && eded1 + eded3 > eded2 && eded2 + eded3 > eded1) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
 // task - 9
 
 // let months = parseInt(prompt("Write the months number"));
