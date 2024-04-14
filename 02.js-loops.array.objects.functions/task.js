@@ -62,6 +62,137 @@
 // console.log(`Cüt ədədlərin cəmi: ${cut_cem}`);
 
 //------------------------------------------------------------------------------//
+// Array task -1
+
+// const students = [
+//   { name: "Ali", scores: [90, 85, 92] },
+//   { name: "Davud", scores: [100, 100, 100] },
+//   { name: "Mammal", scores: [75, 80, 85] },
+//   { name: "Camil", scores: [90, 95, 85] },
+// ];
+
+// function calculateAverage(scores) {
+//   const totalScore = scores.reduce((sum, score) => sum + score, 0);
+//   return totalScore / scores.length;
+// }
+
+// const averageScores = students.map((student) => {
+//   const average = calculateAverage(student.scores);
+//   return { name: student.name, average };
+// });
+// console.log(averageScores);
+
+// Array task -2
+
+// const webTechs = [
+//   "HTML",
+//   "CSS",
+//   "JS",
+//   "React",
+//   "JS",
+//   "Redux",
+//   "Node",
+//   "JS",
+//   "MongDB",
+// ];
+
+// const uzunolanlar = webTechs.filter((tech) => tech.length > 4);
+
+// console.log(uzunolanlar);
+
+// Array task - 3
+
+// const products = [
+//   {
+//     id: 1,
+//     title: "Smartphone",
+//     description: "A high-end smartphone with the latest features.",
+//     price: 799.99,
+//   },
+//   {
+//     id: 2,
+//     title: "Laptop",
+//     description: "Powerful laptop with a large screen and fast processor.",
+//     price: 1299.99,
+//   },
+//   {
+//     id: 3,
+//     title: "Coffee Maker",
+//     description: "An automatic coffee maker with a built-in grinder.",
+//     price: 99.99,
+//   },
+//   {
+//     id: 4,
+//     title: "Headphones",
+//     description: "Wireless over-ear headphones with noise-cancellation.",
+//     price: 199.99,
+//   },
+//   {
+//     id: 5,
+//     title: "Smart TV",
+//     description: "55-inch 4K Smart TV with streaming apps built-in.",
+//     price: 699.99,
+//   },
+// ];
+
+// const totalPrices = products.reduce((sum, product) => sum + product.price, 0);
+
+// const averagePrice = totalPrices / products.length;
+
+// console.log(`Mehsullarin umumi qiymetlerinin cemi: $${totalPrices.toFixed(2)}`);
+// console.log(`Orta qiymet: $${averagePrice.toFixed(2)}`);
+
+// Array task - 4
+
+// const countries = ["Azerbaijan", "Albania", "Germany", "America", "Russian"];
+
+// function findCountriesStartingAndEndingWithA(countryArray) {
+//   const filteredCountries = countryArray.filter((country) => {
+//     const lowerCaseCountry = country.toLowerCase();
+//     return lowerCaseCountry.startsWith("a") && lowerCaseCountry.endsWith("a");
+//   });
+
+//   return filteredCountries;
+// }
+
+// const result = findCountriesStartingAndEndingWithA(countries);
+// console.log("Countries: ", result);
+
+// Array task - 5
+
+// function findNumberOfDivisors(n) {
+//   let count = 0;
+//   for (let i = 1; i <= n; i++) {
+//     if (n % i === 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// const number = 31;
+// const divisorCount = findNumberOfDivisors(number);
+// console.log(`${number}-ə bölünən bölənlərin sayı: ${divisorCount}`);
+
+// Array task - 6
+
+// function findSpaceCounts(str) {
+//   // Boşluqları saymaq üçün bir dövr tətbiq edirik
+//   let spaceCount = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       spaceCount++;
+//     }
+//   }
+//   return spaceCount;
+// }
+
+// const sentence = "Mən Code Academy-də oxuya bilmirəm çünki çatdıra bilmirəm...";
+// const spaces = findSpaceCounts(sentence);
+// console.log(`Cümlədə ${spaces} boşluq var.`);
+
+//------------------------------------------------------------------------------//
+
 // Function task - 1
 
 // function printFullName(firstName, lastName) {
@@ -150,6 +281,15 @@
 
 // Function task -7
 
+// function findMaxElement(arr) {
+//   return Math.max.apply(null, arr);
+// }
+
+// const myArray = [35, 2, 65, 7, 8, 9, 12, 121, 33, 99];
+// const maxElement = findMaxElement(myArray);
+
+// console.log(`Arrayin daxilindəki maksimum element: ${maxElement}`);
+
 // Function task -8
 
 // function filterEmployees(employees) {
@@ -185,6 +325,19 @@
 // console.log(findElement(["a", "g", "y", "d"], "d")); // d array elementərindən biridir
 
 // Function task - 10
+
+// function countSpaces(text) {
+//   const spaceCount = text.split(" ").length - 1;
+//   return spaceCount;
+// }
+
+// const sampleNews = `As software developers, the natural tendency is to start developing applications based on your own
+// hands-on experience and knowledge right away. However, overtime issues in the application arise, adaptations to changes,
+// and new features happen.`;
+
+// const numberOfSpaces = countSpaces(sampleNews);
+
+// console.log(`Bu mətndə ${numberOfSpaces} boşluq var.`);
 
 // Function task - 11
 
