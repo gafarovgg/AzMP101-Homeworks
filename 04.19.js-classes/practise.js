@@ -94,21 +94,6 @@ class User extends Human {
     }
   }
 }
-
-// const Riad = new User(
-//   "Riad",
-//   "Gafarzada",
-//   "Male",
-//   "Azerbaijanian",
-//   "gafarovgg",
-//   "riad.qafarzade@bk.ru",
-//   true,
-//   "riad2003",
-//   "WHAT`S THATT",
-//   20
-// );
-// console.log(Riad);
-// console.log(Riad.changePassword("riad2003", "gafarzade2003"));
 let users = [
   new User(
     "John",
@@ -195,4 +180,27 @@ let users = [
     31
   ),
 ];
-console.log(users);
+
+function sortUsersByUsername(array) {
+  return [...array].sort((a, b) => a.username.localeCompare(b.username));
+}
+// console.log(sortUsersByUsername(users));
+
+function filterByBirthYear(array, year) {
+  return array.filter((user) => user.getBirthYear() > year);
+}
+console.log(filterByBirthYear(users, 1900));
+// const Riad = new User(
+//   "Riad",
+//   "Gafarzada",
+//   "Male",
+//   "Azerbaijanian",
+//   "gafarovgg",
+//   "riad.qafarzade@bk.ru",
+//   true,
+//   "riad2003",
+//   "WHAT`S THATT",
+//   20
+// );
+// console.log(Riad);
+// console.log(Riad.changePassword("riad2003", "gafarzade2003"));
