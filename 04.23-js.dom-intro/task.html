@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <style>
+      body {
+        margin-top: 50px;
+        margin-left: 500px;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .result {
+        margin-left: 10%;
+        color: white;
+        width: 400px;
+
+        background-color: black;
+      }
+      .title {
+        padding: 10px;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        background-color: tomato;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      input {
+        margin-top: 10px;
+        width: 198px;
+      }
+      button {
+        width: 400px;
+        margin: 5px;
+      }
+      .reset {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Simple Calculator</h1>
+      <p class="result">0</p>
+      <input type="number" class="firstnum" placeholder="Value1" />
+      <input type="number" class="secondnum" placeholder="Value2" />
+      <button class="addition">Addition</button>
+      <button class="substract">Substract</button>
+      <button class="multiply">Multiply</button>
+      <button class="division">Division</button>
+      <button class="reset">Reset</button>
+    </div>
+    <script src="./task.js" defer></script>
+  </body>
+</html>
