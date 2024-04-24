@@ -8,22 +8,22 @@ const reset = document.querySelector(".reset");
 const result = document.querySelector(".result");
 
 addition.addEventListener("click", function () {
-  let addition = +firstNum + +secondNum;
+  let addition = +firstNum.value + +secondNum.value;
   result.textContent = addition;
 });
 
 substract.addEventListener("click", function () {
-  let substract = firstNum.asNumber - secondNum.asNumber;
+  let substract = +firstNum.value - +secondNum.value;
   result.textContent = substract;
 });
 
 multiply.addEventListener("click", function () {
-  let multiply = firstNum.asNumber * secondNum.asNumber;
+  let multiply = +firstNum.value * +secondNum.value;
   result.textContent = multiply;
 });
 
 division.addEventListener("click", function () {
-  let division = firstNum.asNumber / secondNum.asNumber;
+  let division = +firstNum.value / +secondNum.value;
   result.textContent = division;
 });
 
