@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./task.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,24 +12,23 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Document</title>
+    <title>To-do APP</title>
   </head>
   <body>
     <div class="container">
       <div class="to-do">
         <h3>Todo App</h3>
-
         <form action="#" class="form">
           <input type="text" id="todoText" placeholder="Enter your task" />
           <button type="submit" class="addBtn" id="addBtn">
-            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-plus" class="addBtn"></i>
           </button>
         </form>
         <span class="error-msg">Input is required!</span>
 
         <div class="tasks">
           <ul class="list" id="list">
-            <li class="list-item">
+            <!-- <li class="list-item">
               <div class="list-text">slaal</div>
               <div class="list-buttons">
                 <button class="complitedBtn manipulationBtn">
@@ -42,7 +41,7 @@
                   <i class="fa-regular fa-pen-to-square"></i>
                 </button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -52,7 +51,7 @@
         </div>
       </div>
     </div>
-
-    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./task.js"></script>
   </body>
 </html>
