@@ -1,0 +1,14 @@
+.card {
+  margin-top: 6rem;
+}
+
+
+.popup{
+    width: 500px;
+    height: 600px;
+    background-color: #002;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    display: none;
+}

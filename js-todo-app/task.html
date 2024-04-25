@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="to-do">
+        <h3>Todo App</h3>
+
+        <form action="#" class="form">
+          <input type="text" id="todoText" placeholder="Enter your task" />
+          <button type="submit" class="addBtn" id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <span class="error-msg">Input is required!</span>
+
+        <div class="tasks">
+          <ul class="list" id="list">
+            <li class="list-item">
+              <div class="list-text">slaal</div>
+              <div class="list-buttons">
+                <button class="complitedBtn manipulationBtn">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="deleteBtn manipulationBtn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="updateBtn manipulationBtn">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="result-text">
+          <p>You have no pending tasks</p>
+          <button class="clear-btn" id="clearBtn">Clear All</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
