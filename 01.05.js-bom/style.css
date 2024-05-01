@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 4rem;
+}
+
+.container {
+  width: 50%;
+  height: 70%;
+  margin: 5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  margin: 0, 1rem;
+}
+
+#choose-minutes,
+#choose-hours,
+#choose-seconds {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#start,
+#stop {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+}
+#stop {
+  background-color: red;
+}

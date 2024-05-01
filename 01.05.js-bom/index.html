@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span
+          id="seconds"
+          >00</span
+        >
+      </h1>
+      <form action="">
+        <label for="">
+          Hours
+          <input id="choose-hours" type="number" min="0" max="24" />
+        </label>
+        <label for="">
+          Minutes
+          <input id="choose-minutes" type="number" min="0" max="59" />
+        </label>
+        <label for="">
+          Seconds
+          <input id="choose-seconds" type="number" min="0" max="59" />
+        </label>
+      </form>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
