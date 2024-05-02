@@ -3,3 +3,82 @@
   justify-content: center;
   align-items: center;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 200px;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.section2 {
+  padding: 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.box img {
+  width: 250px;
+}
+
+.box {
+  width: 250px;
+}
+
+h3 {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* footer */
+
+/* footer section#footer {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 1rem;
+  height: 200px;
+  background: #2c3e50;
+} */
+
+/* .col-1 {
+  width: 25%;
+}
+.col-2 {
+  width: 25%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 25%;
+} */
