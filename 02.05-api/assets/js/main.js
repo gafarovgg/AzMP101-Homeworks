@@ -1,6 +1,5 @@
 import { BaseURL } from "./const.js";
 
-// let tBody = document.querySelector("tbody");
 let tBody = document.querySelector("tbody");
 
 async function getAllData(endpoint) {
