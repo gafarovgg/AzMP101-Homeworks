@@ -1,81 +1,114 @@
-const addBtn = document.querySelector("#addBtn");
-const todoInput = document.querySelector("#todoText");
-const todoList = document.querySelector("#list");
-let allTodos = [];
-class Todo {
-  constructor(todoText) {
-    this.todoText = todoText;
-    this.completed = false;
-    this.id = Date.now();
+let input = document.getElementById("todoText");
+let addBtn = document.getElementById("addBtn");
+let errorMsg = document.querySelector(".error-msg");
+let ulElement = document.getElementById("list");
+let resutMessage = document.querySelector(".result-text p");
+let clearAllBtn = document.getElementById("clearBtn");
+
+class ToDo {
+  static id = 1;
+  constructor(task) {
+    this.id = ToDo.id++;
+    this.task = task;
+    this.isComplited = false;
   }
 }
+
+let toDoArray = [];
 
 addBtn.addEventListener("click", function () {
-  //   console.log(todoInput.value);
-  if (todoInput.value != "") {
-    const todo = new Todo(todoInput.value);
-    allTodos.push(todo);
-    //   console.log(allTodos);
-    renderTodos(allTodos);
-  } else {
-    alert("bura boş saxlanıla bilməz!!!");
-  }
-  resetTodo();
+  errorMessage();
+  fillToDoArray(toDoArray);
+
+  createTaskList();
+
+  resultMsg();
 });
 
-function resetTodo() {
-  todoInput.value = "";
+function errorMessage() {
+  if (input.value.trim() === "") {
+    errorMsg.style.display = "block";
+    input.classList.add("error");
+  } else {
+    errorMsg.style.display = "none";
+    input.classList.remove("error");
+  }
 }
-function renderTodos(arr) {
-  todoList.innerHTML = "";
-  arr.forEach((todo) => {
-    const liElem = document.createElement("li");
-    liElem.className = `"list-item"`;
-    liElem.innerHTML = ` <li class="list-item">
-    <div class="list-text">${todo.todoText}</div>
-    <div class="list-buttons">
-      <button class="complitedBtn manipulationBtn">
-        <i class="fa-solid fa-check"></i>
-      </button>
-      <button class="deleteBtn manipulationBtn">
-        <i class="fa-solid fa-trash"></i>
-      </button>
-      <button class="updateBtn manipulationBtn">
-        <i class="fa-regular fa-pen-to-square"></i>
-      </button>
-    </div>
-  </li>`;
-    todoList.append(liElem);
-  });
-  const allDeleteBtns = document.querySelectorAll(".deleteBtn");
-  //   console.log(allDeleteBtns);
-  allDeleteBtns.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      this.parentElement.parentElement.remove();
-      const id = this.getAttribute("data-id");
-      deleteTodo(id);
-      Swal.fire({
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire({
-            title: "Deleted!",
-            text: "Your file has been deleted.",
-            icon: "success",
-          });
-        }
-      });
+
+function fillToDoArray(array) {
+  let newTodo = new ToDo(input.value);
+  array.push(newTodo);
+  resetInput();
+}
+
+// function for reset input
+function resetInput() {
+  input.value = "";
+}
+
+function createTaskList() {
+  emptyUl();
+
+  if (toDoArray.length > 0) {
+    toDoArray.forEach(function (element) {
+      let liElement = document.createElement("li");
+      liElement.setAttribute("class", "list-item");
+      ulElement.append(liElement);
+      liElement.innerHTML = `
+            <div class="list-text">
+                ${element.task}
+            </div>
+            <div class="list-buttons">
+                <button class="complitedBtn manipulationBtn">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="deleteBtn manipulationBtn" id="${element.id}">  
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+                <button class="updateBtn manipulationBtn">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+            </div>`;
     });
+  }
+
+  selectBtn();
+}
+
+function emptyUl() {
+  ulElement.innerHTML = "";
+}
+
+function selectBtn() {
+  let items = document.querySelectorAll(".manipulationBtn");
+
+  items.forEach((btn) => {
+    if (btn.classList.contains("deleteBtn")) {
+      btn.addEventListener("click", function () {
+        let index = btn.getAttribute("id");
+        deleteItem(index);
+        btn.parentElement.parentElement.remove();
+        resultMsg();
+      });
+    }
   });
 }
 
-function deleteTodo(id) {
-  allTodos = allTodos.filter((q) => q.id != id);
-  renderTodos(allTodos);
+function deleteItem(id) {
+  toDoArray = toDoArray.filter((item) => item.id != id);
+  console.log(toDoArray);
 }
+
+function resultMsg() {
+  if (toDoArray.length > 0) {
+    resutMessage.innerHTML = `You have ${toDoArray.length} pending tasks`;
+  } else {
+    resutMessage.innerHTML = `You have no pending tasks`;
+  }
+}
+
+clearAllBtn.addEventListener("click", function () {
+  toDoArray.length = 0;
+  emptyUl();
+  resultMsg();
+});
